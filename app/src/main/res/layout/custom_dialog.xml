@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Are you sure?"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/text1"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Are you sure you want to delte this post"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text2"
+        android:layout_below="@+id/text1"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        tools:ignore="ExtraText"
+        android:paddingLeft="10dp"
+        android:paddingBottom="30dp"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="10dp">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            android:textSize="15dp"
+            android:textColor="#0000FF"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_color"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/yes_btn"
+            android:drawableLeft="@drawable/baseline_done_24"
+            ></Button>
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:id="@+id/cancel_btn"
+            android:textColor="#86869A"
+            android:textSize="15dp"
+            android:background="@drawable/bg_color_delete"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/baseline_cancel_24"
+
+            ></Button>
+
+    </LinearLayout>
+
+
+
+
+   <!-- <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="yes"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/text2"
+
+/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="cancel"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/yes_btn"
+        android:layout_below="@+id/text2"
+        />-->
+</RelativeLayout>

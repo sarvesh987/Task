@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPost"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="Post Title"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_edit_post"
+        android:textSize="24dp"
+        android:layout_below="@+id/text"
+        android:hint="enter title"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_style"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:text="Description"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/title_edit_post"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/des_edit_post"
+        android:layout_marginTop="10dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/text2"
+        android:hint="enter description"
+        android:background="@drawable/et_style"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text3"
+        android:text="Author"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/des_edit_post"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/author_edit_post"
+        android:layout_marginTop="10dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/text3"
+        android:hint="enter author"
+        android:background="@drawable/et_style"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_changes"
+        android:layout_below="@+id/author_edit_post"
+        android:textSize="24dp"
+        android:text="Save changes"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
